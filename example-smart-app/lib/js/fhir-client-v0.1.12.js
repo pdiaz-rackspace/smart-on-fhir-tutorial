@@ -17388,6 +17388,7 @@ BBClient.authorize = function(params, errback){
 
   providers(params.server, params.provider, function(provider){
 
+	  console.log(JSON.stringify(params));
     params.provider = provider;
 
     var state = params.client.state || Guid.newGuid();
